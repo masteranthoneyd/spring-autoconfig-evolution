@@ -10,6 +10,6 @@ public interface ExpressionEvaluator extends InitializingBean {
 
     @Override
     default void afterPropertiesSet() {
-        System.out.println(this.getClass().getSimpleName() + " afterPropertiesSet...");
+        System.out.println(this.getClass().getSimpleName() + " initializing...");
     }
 }

@@ -11,6 +11,8 @@
         <module>spring-config-xml</module>
         <module>component-provider</module>
         <module>spring-config-import</module>
+        <module>spring-autocofig</module>
+        <module>component-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,4 +1,4 @@
-package com.yangbingdong.spring.third;
+package com.yangbingdong.spring.configimport;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
@@ -10,6 +10,6 @@ public class ExpressionEvaluatorImportSelector implements ImportSelector {
 
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        return new String[] {"com.yangbingdong.spring.third.ExpressionEvaluatorConfiguration"};
+        return new String[]{"com.yangbingdong.spring.configimport.ExpressionEvaluatorConfiguration"};
     }
 }
