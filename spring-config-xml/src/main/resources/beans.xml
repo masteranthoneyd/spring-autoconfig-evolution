@@ -13,4 +13,8 @@
         <constructor-arg index="0" type="java.lang.String" value="0.1"/>
     </bean>
 
+    <bean id="calculatingService" class="com.yangbingdong.spring.service.CalculatingService">
+        <property name="taxCalculator" ref="taxCalculator"/>
+    </bean>
+
 </beans>
