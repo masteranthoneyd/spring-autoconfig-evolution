@@ -3,13 +3,17 @@ package com.yangbingdong.spring.autoconfig;
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
 
+import java.util.Properties;
+
 /**
  * @author bingdong.yang@salesforce-china.com
  */
-public class MyImportSelector implements ImportSelector {
+public class MyImportSelectorPlus implements ImportSelector {
 
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        return new String[]{"com.yangbingdong.spring.third.ExpressionEvaluatorAutoConfiguration"};
+        Properties properties = MyConfigLoader.loadConfig("/META-INF/load-config.properties");
+        String strings = (String) properties.get(MyEnableConfiguration.class.getName());
+        return new String[]{strings};
     }
 }

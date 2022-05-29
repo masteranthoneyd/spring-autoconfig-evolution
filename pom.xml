@@ -13,6 +13,7 @@
         <module>spring-config-import</module>
         <module>spring-autocofig</module>
         <module>component-consumer</module>
+        <module>springboot-sample</module>
     </modules>
     <packaging>pom</packaging>
 
